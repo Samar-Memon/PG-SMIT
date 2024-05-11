@@ -15,14 +15,30 @@
         </div>
         <div class="range">
             <span>Password Length</span>
-            <input type="range" min="8" max="24" id="range">
+            <input type="range" min="8" max="24" id="range" value="10">
             <span>Length: <b id="b">8</b></span>
         </div>
         <ul class="details">
-            <li class="option"><span>Includes Lowercase Letter (a...z)</span> <input id="lower" type="checkbox"></li>
-            <li class="option"><span>Includes Uppercase Letter (A...Z)</span> <input id="upper" type="checkbox"></li>
-            <li class="option"><span>Includes Number (0...9)</span> <input id="number" type="checkbox"></li>
-            <li class="option"><span>Includes Symbols (!...@)</span> <input id="symbol" type="checkbox"></li>
+            <li class="option">
+                <span>Includes Lowercase Letter (a...z)</span>
+                <input id="lower" type="checkbox">
+                <label for="lower"></label>
+            </li>
+            <li class="option">
+                <span>Includes Uppercase Letter (A...Z)</span>
+                <input id="upper" type="checkbox">
+                <label for="upper"></label>
+            </li>
+            <li class="option">
+                <span>Includes Number (0...9)</span>
+                <input id="number" type="checkbox">
+                <label for="number"></label>
+            </li>
+            <li class="option">
+                <span>Includes Symbols (!...@)</span>
+                <input id="symbol" type="checkbox">
+                <label for="symbol"></label>
+            </li>
         </ul>
         <button id="generate">Generate</button>
     </div>
